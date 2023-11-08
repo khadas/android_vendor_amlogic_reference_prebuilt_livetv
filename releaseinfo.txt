@@ -1,0 +1,23 @@
+commit 188095cac00a1b4793600717e8ab9a8718dc0817 (origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Fri Oct 20 15:54:40 2023 +0800
+
+    LiveTv: Modify PIP UI display issues [1/1]
+
+    PD#SWPL-138809
+    PD#SWPL-140769
+    PD#TV-97101
+
+    Problem:
+    Zap audio only service and open PIP,select layout 3 times,the audio only
+    not display on the main window
+
+    Solution:
+    Modify PIP UI display issues
+    Modify settings entry
+
+    Verify:
+    ohm
+
+    Change-Id: I6bbb3e57dddc432db7beea481b84e134ec50e071
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>

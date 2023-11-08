@@ -1,0 +1,55 @@
+package {
+    default_applicable_licenses: ["vendor_amlogic_livetv_license"],
+}
+
+license {
+    name: "vendor_amlogic_livetv_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+}
+
+bootstrap_go_package {
+    name: "soong-droidlogic_livetv",
+    pkgPath: "android/soong/vendor/amlogic/common/prebuilt/livetv",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+        "soong-cc",
+        "soong-genrule",
+    ],
+    srcs: [
+        "droidlogic_livetv.go",
+    ],
+    pluginFor: ["soong_build"],
+}
+
+soong_config_module_type_import {
+    from: "device/amlogic/common/soong_config/Android.bp",
+    module_types: ["amlogic_vendorconfig_cc_defaults"],
+}
+
+prebuilt_livetv_go_defaults {
+    name: "prebuilt_livetv_go_defaults",
+}
+
+// 1.prebuild DroidLogicLiveTv
+android_app_import {
+    name: "DroidLogicLiveTv",
+
+    dex_preopt: {
+        enabled:false,
+    },
+
+    defaults: ["prebuilt_livetv_go_defaults"],
+    certificate: "platform",
+
+    product_specific: true,
+//    required: ["com.droidlogic.android.tv.installed.xml"],
+//    privileged: true,
+    apk: "DroidLogicLiveTv.apk",
+
+}
