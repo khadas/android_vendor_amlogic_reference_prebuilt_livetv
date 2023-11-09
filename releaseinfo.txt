@@ -1,23 +1,46 @@
-commit 188095cac00a1b4793600717e8ab9a8718dc0817 (origin/master, origin/HEAD)
+commit 652f29e459697b648821369a153a8d0999264ed5 (HEAD -> master)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Fri Oct 20 15:54:40 2023 +0800
+Date:   Wed Nov 15 14:46:39 2023 +0800
 
-    LiveTv: Modify PIP UI display issues [1/1]
+    LiveTV: Support HDMI PIP function [1/1]
 
-    PD#SWPL-138809
-    PD#SWPL-140769
-    PD#TV-97101
+    PD#SWPL-134627
 
     Problem:
-    Zap audio only service and open PIP,select layout 3 times,the audio only
-    not display on the main window
+    PIP-UI
 
     Solution:
-    Modify PIP UI display issues
-    Modify settings entry
+    Support HDMI PIP function
+
+    Verify:
+    T3X
+
+    Change-Id: I67a08cd0d68c90871b5224b3e4f91cee6bd08804
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
+commit 4a5c8034c3b3362bb188f98d85611c033db2d153 (origin/master, origin/HEAD)
+Merge: 48f47eb7 85195f47
+Author: Fei Zhang1 <fei.zhang1@amlogic.com>
+Date:   Wed Nov 15 01:58:24 2023 +0000
+
+    Merge "LiveTV: add notify support [1/1]"
+
+commit 48f47eb7ed2d643724a1a5e58a5985b0b7321940
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Tue Nov 14 15:57:20 2023 +0800
+
+    LiveTV: Use child threads to load program information [1/1]
+
+    PD#SWPL-144541
+
+    Problem:
+    Moving the cursor in the EPG interface is not smooth
+
+    Solution:
+    Use child threads to load program information
 
     Verify:
     ohm
 
-    Change-Id: I6bbb3e57dddc432db7beea481b84e134ec50e071
+    Change-Id: I38f0285f42c4de70d19103976d7920a3008ee5fc
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
