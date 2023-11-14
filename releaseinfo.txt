@@ -1,46 +1,19 @@
-commit 652f29e459697b648821369a153a8d0999264ed5 (HEAD -> master)
+commit 27dc6f62e59c19a1025f81fa67ce416262addaf4
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Nov 15 14:46:39 2023 +0800
+Date:   Mon Nov 20 14:00:23 2023 +0800
 
-    LiveTV: Support HDMI PIP function [1/1]
+    LiveTv: Clear EPG display cache [1/1]
 
-    PD#SWPL-134627
+    PD#SWPL-144275
 
     Problem:
-    PIP-UI
+    skip all channels, EPG information should not be displayed
 
     Solution:
-    Support HDMI PIP function
-
-    Verify:
-    T3X
-
-    Change-Id: I67a08cd0d68c90871b5224b3e4f91cee6bd08804
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit 4a5c8034c3b3362bb188f98d85611c033db2d153 (origin/master, origin/HEAD)
-Merge: 48f47eb7 85195f47
-Author: Fei Zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Nov 15 01:58:24 2023 +0000
-
-    Merge "LiveTV: add notify support [1/1]"
-
-commit 48f47eb7ed2d643724a1a5e58a5985b0b7321940
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Tue Nov 14 15:57:20 2023 +0800
-
-    LiveTV: Use child threads to load program information [1/1]
-
-    PD#SWPL-144541
-
-    Problem:
-    Moving the cursor in the EPG interface is not smooth
-
-    Solution:
-    Use child threads to load program information
+    Clear EPG display cache
 
     Verify:
     ohm
 
-    Change-Id: I38f0285f42c4de70d19103976d7920a3008ee5fc
+    Change-Id: I7fcefe10a98817edcb7a8e533c88ef666bb89c40
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
