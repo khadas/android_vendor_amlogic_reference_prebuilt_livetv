@@ -1,19 +1,47 @@
-commit 27dc6f62e59c19a1025f81fa67ce416262addaf4
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Mon Nov 20 14:00:23 2023 +0800
+commit 837d32f0084e35028d628e1160b2ab9f514be140 (HEAD -> master)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Wed Nov 29 09:34:26 2023 +0800
 
-    LiveTv: Clear EPG display cache [1/1]
+    LiveTV: epg show duplicated time [1/1]
 
-    PD#SWPL-144275
+    PD#SWPL-143600
 
     Problem:
-    skip all channels, EPG information should not be displayed
+    add twice epg
 
     Solution:
-    Clear EPG display cache
+    remove unnecessary insert
 
     Verify:
-    ohm
+    Soddy
 
-    Change-Id: I7fcefe10a98817edcb7a8e533c88ef666bb89c40
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+    Change-Id: I164b57e451de5908c671408a6b795ba244347230
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit 99edee23e273a8c1e31817bdf8097b147c8665ee (origin/master, origin/HEAD)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Mon Nov 27 09:41:34 2023 +0800
+
+    LiveTV: prevent killed when livetv is background [1/1]
+
+    PD#SWPL-142071
+
+    Problem:
+    U cached app may be killed
+
+    Solution:
+    add install packages permission
+
+    Verify:
+    Soddy
+
+    Change-Id: I1357653dfa8e1f41c1bc4c2e1a13324af7b9e1fe
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit e749c4beb2f8259f730e058ebc8f5e4de4a670f6
+Merge: 8208c35 3a06bc9
+Author: Fei Zhang1 <fei.zhang1@amlogic.com>
+Date:   Tue Nov 21 01:42:08 2023 +0000
+
+    Merge "LiveTV: improve channel edit when more than 400 channels [1/1]"
+
