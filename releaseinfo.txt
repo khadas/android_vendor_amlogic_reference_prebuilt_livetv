@@ -1,47 +1,50 @@
-commit 837d32f0084e35028d628e1160b2ab9f514be140 (HEAD -> master)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Wed Nov 29 09:34:26 2023 +0800
+commit 3fca86e9c902753d6dcb3ea3b566ff53f7ffecb8 (HEAD -> master, origin/master, origin/HEAD)
+Author: ming.an <ming.an@amlogic.com>
+Date:   Tue Dec 5 10:51:29 2023 +0800
 
-    LiveTV: epg show duplicated time [1/1]
+    ATF: playback picture is not smooth [1/1]
 
-    PD#SWPL-143600
-
-    Problem:
-    add twice epg
-
-    Solution:
-    remove unnecessary insert
-
-    Verify:
-    Soddy
-
-    Change-Id: I164b57e451de5908c671408a6b795ba244347230
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
-
-commit 99edee23e273a8c1e31817bdf8097b147c8665ee (origin/master, origin/HEAD)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Mon Nov 27 09:41:34 2023 +0800
-
-    LiveTV: prevent killed when livetv is background [1/1]
-
-    PD#SWPL-142071
+    PD#SWPL-144801
+    PD#SWPL-146582
 
     Problem:
-    U cached app may be killed
+    not need LiveTv do resmue playback position
 
     Solution:
-    add install packages permission
+    not need LiveTv do resmue playback position
 
     Verify:
-    Soddy
+    ohm
 
-    Change-Id: I1357653dfa8e1f41c1bc4c2e1a13324af7b9e1fe
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Signed-off-by: ming.an <ming.an@amlogic.com>
+    Change-Id: I0c31ebe3ecd1259119b80bcdf9033a19846b687e
+    Signed-off-by: ming.an <ming.an@amlogic.com>
 
-commit e749c4beb2f8259f730e058ebc8f5e4de4a670f6
-Merge: 8208c35 3a06bc9
+commit fd5e1be6059c1ce6f91c5f0250cab84f3ef41f25
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Fri Dec 8 17:22:51 2023 +0800
+
+    LiveTV: ATF OAD UI need change new path [1/1]
+
+    PD#SWPL-147990
+
+    Problem:
+    After canceling the "12.10.2020 Güncel Listesi" prompt, the channel
+    cannot be played
+    ATF OAD UI need change new path
+
+    Solution:
+    ATF OAD UI need change new path
+
+    Verify:
+    ohm
+
+    Change-Id: I68c9a26d451da87b12ff17446d6c216cd4825974
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
+commit c1bdb1eb88632b4605d5141895a56d7fa6a970e7
+Merge: 2bcf69c f79bfc4
 Author: Fei Zhang1 <fei.zhang1@amlogic.com>
-Date:   Tue Nov 21 01:42:08 2023 +0000
+Date:   Fri Dec 8 09:24:15 2023 +0000
 
-    Merge "LiveTV: improve channel edit when more than 400 channels [1/1]"
-
+    Merge "livetv: pvr add audio only tip [1/1]"
