@@ -1,4 +1,26 @@
-commit 0381601d9f9d96c23f3b3716d4b4057b9dc3d376 (HEAD -> master, origin/master, origin/HEAD)
+commit addbd18ae114a01c88802d4dd51f9cc57e4ca993 (HEAD -> master)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Wed Dec 20 19:41:55 2023 +0800
+
+    LiveTv: fix channel edit issues [1/1]
+
+    PD#SWPL-149917
+    PD#SWPL-149942
+    PD#SWPL-149943
+
+    Problem:
+    logic issue and sync issue
+
+    Solution:
+    fix logic
+
+    Verify:
+    ohm
+
+    Change-Id: I93cfe798da0a333e95510e2c0c191e569a919566
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit 0381601d9f9d96c23f3b3716d4b4057b9dc3d376 (origin/master, origin/HEAD)
 Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
 Date:   Fri Dec 15 17:36:26 2023 +0800
 
@@ -28,12 +50,3 @@ Date:   Mon Dec 11 15:03:19 2023 +0800
 
     Problem:
     Play DTMB broadcast and select channel info，the strength display as 0%
-
-    Solution:
-    Update signal strength
-
-    Verify:
-    TXHD
-
-    Change-Id: I10399fe0310b66f33cee2d8bcd48aec5168fb119
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
