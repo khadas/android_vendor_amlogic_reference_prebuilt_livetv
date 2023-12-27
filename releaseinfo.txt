@@ -1,52 +1,50 @@
-commit addbd18ae114a01c88802d4dd51f9cc57e4ca993 (HEAD -> master)
+commit bebe6b7e986999c178714e33fd505596ad5ad8de (HEAD -> master)
 Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Wed Dec 20 19:41:55 2023 +0800
+Date:   Wed Jan 3 15:08:30 2024 +0800
 
-    LiveTv: fix channel edit issues [1/1]
+    LiveTv: ATSC T/C switch, programs show incorrect [1/1]
 
-    PD#SWPL-149917
-    PD#SWPL-149942
-    PD#SWPL-149943
+    PD#SWPL-143378
 
     Problem:
-    logic issue and sync issue
+    wrong channels list
 
     Solution:
-    fix logic
+    fix channels list
+
+    Verify:
+    T5M
+
+    Change-Id: I0dac808e594403536e6c43e3473b1bfe06f5f3a3
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit 98f99ce7b9ec9e00040ba839ec8700bfb3901966 (origin/master, origin/HEAD)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Fri Dec 29 17:20:00 2023 +0800
+
+    LiveTv: fix function conflict [1/1]
+
+    PD#SWPL-150351
+
+    Problem:
+    function conflict
+
+    Solution:
+    remove one
 
     Verify:
     ohm
 
-    Change-Id: I93cfe798da0a333e95510e2c0c191e569a919566
+    Change-Id: I5d6552280808f461455c51fd291142fb2f735e4d
     Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
 
-commit 0381601d9f9d96c23f3b3716d4b4057b9dc3d376 (origin/master, origin/HEAD)
+commit d742fa6b6165930d5901f2ab8fe847f8683709d7
 Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Fri Dec 15 17:36:26 2023 +0800
+Date:   Thu Dec 21 18:44:46 2023 +0800
 
-    LiveTv: skip function abnormal [1/1]
+    LiveTv: LCN 0 channel tuned [1/1]
 
-    PD#SWPL-146972
-
-    Problem:
-    skip all programs, then unlock any one, cannot play
-
-    Solution:
-    add function to handle the case
-
-    Verify:
-    ohm
-
-    Change-Id: I900e921481140e22aecd6958bcc7a87d823b5522
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
-
-commit b06bf0a5330f16cca96fc483440b0932ef787e5a
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Mon Dec 11 15:03:19 2023 +0800
-
-    LiveTv: Update signal strength [1/1]
-
-    PD#SWPL-144423
+    PD#SWPL-150351
 
     Problem:
-    Play DTMB broadcast and select channel info，the strength display as 0%
+    when profile_selectable is false, cannot tune by user
