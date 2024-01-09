@@ -1,50 +1,66 @@
-commit bebe6b7e986999c178714e33fd505596ad5ad8de (HEAD -> master)
+commit 648486a145324337c45a7903b9e7154f0ad0f0a4 (HEAD -> master)
 Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Wed Jan 3 15:08:30 2024 +0800
+Date:   Thu Jan 11 17:36:35 2024 +0800
 
-    LiveTv: ATSC T/C switch, programs show incorrect [1/1]
+    LiveTv: context ref fail [1/1]
 
-    PD#SWPL-143378
+    PD#NONE
 
     Problem:
-    wrong channels list
+    context convert fail
 
     Solution:
-    fix channels list
+    no convert
 
     Verify:
-    T5M
+    T5W
 
-    Change-Id: I0dac808e594403536e6c43e3473b1bfe06f5f3a3
+    Change-Id: Ib98fbc0b20692b0f22ba538995e88453055fcf5f
     Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
 
-commit 98f99ce7b9ec9e00040ba839ec8700bfb3901966 (origin/master, origin/HEAD)
+commit dad53764e089d383d9c476965e540e3f00f1cdd5
 Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Fri Dec 29 17:20:00 2023 +0800
+Date:   Wed Jan 10 23:32:13 2024 +0800
 
-    LiveTv: fix function conflict [1/1]
+    LiveTv: delete channel judge fail [1/1]
 
-    PD#SWPL-150351
+    PD#SWPL-153340
 
     Problem:
-    function conflict
+    stream change, show no channel
 
     Solution:
-    remove one
+    adjust delete channel judge
 
     Verify:
-    ohm
+    T5W
 
-    Change-Id: I5d6552280808f461455c51fd291142fb2f735e4d
+    Change-Id: Ie092bee60232a1e64a388b8798e9d6e0ed2d596b
     Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
 
-commit d742fa6b6165930d5901f2ab8fe847f8683709d7
+commit 0bfaf7fe1a09d0a8f421609f65a8ee4dbd26f1dc
 Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Thu Dec 21 18:44:46 2023 +0800
+Date:   Wed Jan 10 11:32:46 2024 +0800
 
-    LiveTv: LCN 0 channel tuned [1/1]
+    LiveTv: more info on channel bar [1/1]
 
-    PD#SWPL-150351
+    PD#SWPL-151638
 
     Problem:
-    when profile_selectable is false, cannot tune by user
+    Ireland country requirement
+
+    Solution:
+    add
+
+    Verify:
+    T5W
+
+    Change-Id: Id7d17ee8456dc5942d60523e2f97a6d2f0f5c23a
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit 8445af8376ffe19b2c2168a2d608c1600cf68175 (origin/master, origin/HEAD)
+Merge: 3f59f8e 7edd127
+Author: Fei Zhang1 <fei.zhang1@amlogic.com>
+Date:   Wed Jan 10 03:24:00 2024 +0000
+
+    Merge "LiveTv: occasionly show no channel in hdmi source [1/1]"
