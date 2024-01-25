@@ -1,66 +1,63 @@
-commit 648486a145324337c45a7903b9e7154f0ad0f0a4 (HEAD -> master)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Thu Jan 11 17:36:35 2024 +0800
+commit 368155576e134e565b1174a860337787b82e497a (HEAD -> master, origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Tue Feb 6 17:17:07 2024 +0800
 
-    LiveTv: context ref fail [1/1]
+    LiveTV: Resolve level lock display [1/1]
 
-    PD#NONE
-
-    Problem:
-    context convert fail
-
-    Solution:
-    no convert
-
-    Verify:
-    T5W
-
-    Change-Id: Ib98fbc0b20692b0f22ba538995e88453055fcf5f
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
-
-commit dad53764e089d383d9c476965e540e3f00f1cdd5
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Wed Jan 10 23:32:13 2024 +0800
-
-    LiveTv: delete channel judge fail [1/1]
-
-    PD#SWPL-153340
+    PD#SWPL-154930
 
     Problem:
-    stream change, show no channel
+    The rating info display not complete on EPG/infobar/lock hints
 
     Solution:
-    adjust delete channel judge
+    The rating info display not complete on EPG/infobar/lock hints
 
     Verify:
-    T5W
+    T7
 
-    Change-Id: Ie092bee60232a1e64a388b8798e9d6e0ed2d596b
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Change-Id: I4aa4af0d6df62039d3410faa63a83d4a31854fbc
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
 
-commit 0bfaf7fe1a09d0a8f421609f65a8ee4dbd26f1dc
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Wed Jan 10 11:32:46 2024 +0800
+commit c9441d7ef6c7b00c79eabe3a7f2a9feff097b5f1
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Sun Feb 4 16:02:41 2024 +0800
 
-    LiveTv: more info on channel bar [1/1]
+    LiveTV: Handling Timeshift progress bar exception [1/1]
 
-    PD#SWPL-151638
+    PD#SWPL-146202
 
     Problem:
-    Ireland country requirement
+    When dragging the progress bar during timeshift,
+    the progress bar moves abnormally
 
     Solution:
-    add
+    Handling Timeshift progress bar exception
 
     Verify:
-    T5W
+    ohm
 
-    Change-Id: Id7d17ee8456dc5942d60523e2f97a6d2f0f5c23a
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Change-Id: Ic596a853c962f664078a8f604a40818560e00087
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
 
-commit 8445af8376ffe19b2c2168a2d608c1600cf68175 (origin/master, origin/HEAD)
-Merge: 3f59f8e 7edd127
-Author: Fei Zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Jan 10 03:24:00 2024 +0000
+commit c2bb17a8b08ce469c40a07d9894a8bbec04d2fd0
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Wed Jan 31 14:55:03 2024 +0800
 
-    Merge "LiveTv: occasionly show no channel in hdmi source [1/1]"
+    LiveTV: Handling RRT and parent ratings issues [1/1]
+
+    PD#SWPL-154855
+    PD#SWPL-154930
+    PD#SWPL-154928
+    PD#SWPL-154667
+
+    Problem:
+    Lock TV-G, the following V-Chip rating should also be locked
+
+    Solution:
+    Handling RRT and parent ratings issues
+
+    Verify:
+    T7C
+
+    Change-Id: Ia07c35a156ccc589c5832181fe1d459618070e80
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
