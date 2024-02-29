@@ -1,83 +1,20 @@
-commit 5182b660d16e92adfd6ef0bc83fe5f41f98c0bc7 (HEAD -> master)
-Author: ming.an <ming.an@amlogic.com>
-Date:   Thu Feb 29 14:46:28 2024 +0800
-
-    schedule: Schedule recording in EPG, abnormal prompt [1/1]
-
-    PD#SWPL-155731
-
-    Problem:
-    need use event id as schedule mark
-
-    Solution:
-    need use event id as schedule mark
-
-    Verify:
-    T5M
-
-    Change-Id: Ie9d45158d5b7188a2c89bceb1b8cde009d1f54be
-    Signed-off-by: ming.an <ming.an@amlogic.com>
-
-commit 368155576e134e565b1174a860337787b82e497a (HEAD -> master, origin/master, origin/HEAD)
+commit 1efaa4cca7441f0b3adc5f469a0e33277fabd93c (HEAD -> master)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Tue Feb 6 17:17:07 2024 +0800
+Date:   Mon Mar 18 16:38:47 2024 +0800
 
-    LiveTV: Resolve level lock display [1/1]
+    LiveTV: Pop up time conflict [1/1]
 
-    PD#SWPL-154930
-
-    Problem:
-    The rating info display not complete on EPG/infobar/lock hints
-
-    Solution:
-    The rating info display not complete on EPG/infobar/lock hints
-
-    Verify:
-    T7
-
-    Change-Id: I4aa4af0d6df62039d3410faa63a83d4a31854fbc
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit c9441d7ef6c7b00c79eabe3a7f2a9feff097b5f1
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Sun Feb 4 16:02:41 2024 +0800
-
-    LiveTV: Handling Timeshift progress bar exception [1/1]
-
-    PD#SWPL-146202
+    PD#SWPL-161321
 
     Problem:
-    When dragging the progress bar during timeshift,
-    the progress bar moves abnormally
+    Add the same timer/record task on different channels，
+    the timer/Record task will auto cancelled
 
     Solution:
-    Handling Timeshift progress bar exception
+    Pop up time conflict
 
     Verify:
-    ohm
+    S7
 
-    Change-Id: Ic596a853c962f664078a8f604a40818560e00087
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit c2bb17a8b08ce469c40a07d9894a8bbec04d2fd0
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed Jan 31 14:55:03 2024 +0800
-
-    LiveTV: Handling RRT and parent ratings issues [1/1]
-
-    PD#SWPL-154855
-    PD#SWPL-154930
-    PD#SWPL-154928
-    PD#SWPL-154667
-
-    Problem:
-    Lock TV-G, the following V-Chip rating should also be locked
-
-    Solution:
-    Handling RRT and parent ratings issues
-
-    Verify:
-    T7C
-
-    Change-Id: Ia07c35a156ccc589c5832181fe1d459618070e80
+    Change-Id: I4a6c48d4d5b9e15faa610c80141c8701fe829585
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
