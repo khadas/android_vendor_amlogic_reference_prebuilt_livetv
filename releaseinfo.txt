@@ -1,3 +1,23 @@
+commit 5182b660d16e92adfd6ef0bc83fe5f41f98c0bc7 (HEAD -> master)
+Author: ming.an <ming.an@amlogic.com>
+Date:   Thu Feb 29 14:46:28 2024 +0800
+
+    schedule: Schedule recording in EPG, abnormal prompt [1/1]
+
+    PD#SWPL-155731
+
+    Problem:
+    need use event id as schedule mark
+
+    Solution:
+    need use event id as schedule mark
+
+    Verify:
+    T5M
+
+    Change-Id: Ie9d45158d5b7188a2c89bceb1b8cde009d1f54be
+    Signed-off-by: ming.an <ming.an@amlogic.com>
+
 commit 368155576e134e565b1174a860337787b82e497a (HEAD -> master, origin/master, origin/HEAD)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
 Date:   Tue Feb 6 17:17:07 2024 +0800
