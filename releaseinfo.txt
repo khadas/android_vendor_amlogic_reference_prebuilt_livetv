@@ -1,4 +1,24 @@
-commit 1efaa4cca7441f0b3adc5f469a0e33277fabd93c (HEAD -> master)
+commit 07afb6e3cb039430556a60ef003c4fefd3f7dbcd (HEAD -> master, origin/master, origin/HEAD)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Thu Mar 21 10:20:00 2024 +0800
+
+    LiveTV: hidden program judge not right [1/1]
+
+    PD#SWPL-161632
+
+    Problem:
+    hidden program judge not right
+
+    Solution:
+    rework browsable flow
+
+    Verify:
+    T5D
+
+    Change-Id: Ib2e1e17dc77b0bb9a72fe4f25c245c2d82320441
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit 1efaa4cca7441f0b3adc5f469a0e33277fabd93c
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
 Date:   Mon Mar 18 16:38:47 2024 +0800
 
