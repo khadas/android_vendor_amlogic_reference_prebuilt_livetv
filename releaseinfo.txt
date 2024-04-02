@@ -1,40 +1,64 @@
-commit 07afb6e3cb039430556a60ef003c4fefd3f7dbcd (HEAD -> master, origin/master, origin/HEAD)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Thu Mar 21 10:20:00 2024 +0800
-
-    LiveTV: hidden program judge not right [1/1]
-
-    PD#SWPL-161632
-
-    Problem:
-    hidden program judge not right
-
-    Solution:
-    rework browsable flow
-
-    Verify:
-    T5D
-
-    Change-Id: Ib2e1e17dc77b0bb9a72fe4f25c245c2d82320441
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
-
-commit 1efaa4cca7441f0b3adc5f469a0e33277fabd93c
+commit a5aa5aeb7bbcb34715aa6ae736f7bd275ce12e56 (origin/master, origin/HEAD)
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Mon Mar 18 16:38:47 2024 +0800
+Date:   Thu Apr 11 09:44:42 2024 +0800
 
-    LiveTV: Pop up time conflict [1/1]
+    LiveTV: Solve the problem that the UI cannot be updated automatically [1/1]
 
-    PD#SWPL-161321
+    PD#SWPL-164006
 
     Problem:
-    Add the same timer/record task on different channels，
-    the timer/Record task will auto cancelled
+    timeshift start mode is set to auto, pressing the left and right
+    keys，the time on the progress bar always displays 00:00
 
     Solution:
-    Pop up time conflict
+    Solve the problem that the UI cannot update automatically when the
+    Timeshift mode is automatic.
 
     Verify:
-    S7
+    T3X
 
-    Change-Id: I4a6c48d4d5b9e15faa610c80141c8701fe829585
+    Change-Id: I0c32c9c7e200d0c401b144fe47430b4a712cdc2c
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
+commit 7abe64b55df11da7cc6020b625499a719de0de7a
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Thu Apr 11 09:44:42 2024 +0800
+
+    LiveTV: Solve the problem that the UI cannot be updated automatically [1/1]
+
+    PD#SWPL-164006
+
+    Problem:
+    timeshift start mode is set to auto, pressing the left and right
+    keys，the time on the progress bar always displays 00:00
+
+    Solution:
+    Solve the problem that the UI cannot update automatically when the
+    Timeshift mode is automatic.
+
+    Verify:
+    T3X
+
+    Change-Id: I0c32c9c7e200d0c401b144fe47430b4a712cdc2c
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+
+commit 137b8899658dfd4f21f342c383210015a23f4d5f
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Tue Apr 9 09:46:02 2024 +0800
+
+    LiveTV: Fix Ci_plus error [1/1]
+
+    PD#SWPL-159370
+
+    Problem:
+    Fail for 'on service 'CAM_02_Scram',after run the script
+    op-prof_op-nit_912_X.c,the 'No Channel' popup displayed with no AV
+
+    Solution:
+    Fix Ci_plus error
+
+    Verify:
+    T3X
+
+    Change-Id: Iba2634746eab87dc08654822c1de3c34a8da27bb
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
