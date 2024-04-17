@@ -1,64 +1,20 @@
-commit a5aa5aeb7bbcb34715aa6ae736f7bd275ce12e56 (origin/master, origin/HEAD)
+commit 760deab5f74e1967608886e4fda2330b78ac8107
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu Apr 11 09:44:42 2024 +0800
+Date:   Thu Apr 18 19:51:55 2024 +0800
 
-    LiveTV: Solve the problem that the UI cannot be updated automatically [1/1]
+    LiveTV: fix OAD update error [1/1]
 
-    PD#SWPL-164006
+    PD#SWPL-162170
+    PD#SWPL-162193
 
     Problem:
-    timeshift start mode is set to auto, pressing the left and right
-    keys，the time on the progress bar always displays 00:00
+    AC off/on, OAD files cannot be automatically detected
 
     Solution:
-    Solve the problem that the UI cannot update automatically when the
-    Timeshift mode is automatic.
+    fix OAD update error
 
     Verify:
     T3X
 
-    Change-Id: I0c32c9c7e200d0c401b144fe47430b4a712cdc2c
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit 7abe64b55df11da7cc6020b625499a719de0de7a
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu Apr 11 09:44:42 2024 +0800
-
-    LiveTV: Solve the problem that the UI cannot be updated automatically [1/1]
-
-    PD#SWPL-164006
-
-    Problem:
-    timeshift start mode is set to auto, pressing the left and right
-    keys，the time on the progress bar always displays 00:00
-
-    Solution:
-    Solve the problem that the UI cannot update automatically when the
-    Timeshift mode is automatic.
-
-    Verify:
-    T3X
-
-    Change-Id: I0c32c9c7e200d0c401b144fe47430b4a712cdc2c
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
-commit 137b8899658dfd4f21f342c383210015a23f4d5f
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Tue Apr 9 09:46:02 2024 +0800
-
-    LiveTV: Fix Ci_plus error [1/1]
-
-    PD#SWPL-159370
-
-    Problem:
-    Fail for 'on service 'CAM_02_Scram',after run the script
-    op-prof_op-nit_912_X.c,the 'No Channel' popup displayed with no AV
-
-    Solution:
-    Fix Ci_plus error
-
-    Verify:
-    T3X
-
-    Change-Id: Iba2634746eab87dc08654822c1de3c34a8da27bb
+    Change-Id: Ia8ef1a2752f13b8f593ed8d45b2034fe6ee1cd8b
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
