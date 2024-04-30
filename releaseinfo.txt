@@ -1,20 +1,44 @@
-commit 760deab5f74e1967608886e4fda2330b78ac8107
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu Apr 18 19:51:55 2024 +0800
+commit 19e0c23bda448a1f5ebc12bbfdf887983ecf50c6 (HEAD -> master)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Tue Apr 30 11:27:48 2024 +0800
 
-    LiveTV: fix OAD update error [1/1]
+    LiveTV: ATV displayName changed and restored unexpectly [2/2]
 
-    PD#SWPL-162170
-    PD#SWPL-162193
+    PD#SWPL-167837
 
     Problem:
-    AC off/on, OAD files cannot be automatically detected
+    logic mismatch
 
     Solution:
-    fix OAD update error
+    remove tune displayName
 
     Verify:
-    T3X
+    T5D
 
-    Change-Id: Ia8ef1a2752f13b8f593ed8d45b2034fe6ee1cd8b
-    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
+    Change-Id: I418a8443243f9a10ba43d92db207e559580a5f23
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit 10ddec95ab80725cf400a2e08dba06c57888fd73
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Wed Apr 3 11:00:29 2024 +0800
+
+    LiveTV: change source and search finish, play slow [2/2]
+
+    PD#SWPL-164085
+
+    Problem:
+    other source db is too much
+
+    Solution:
+    after search, only update current source channel list
+
+    Verify:
+    T5D
+
+    Change-Id: If3c74d4295af849a7237e2553f341b7630ebf640
+    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+
+commit e4594517b4cd9be6cfb3ee33c7ac6e3385e7b11e (origin/master, origin/HEAD)
+Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
+Date:   Tue Apr 9 18:59:39 2024 +0800
+
