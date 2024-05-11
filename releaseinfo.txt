@@ -1,44 +1,39 @@
-commit 19e0c23bda448a1f5ebc12bbfdf887983ecf50c6 (HEAD -> master)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Tue Apr 30 11:27:48 2024 +0800
+commit 0cb8d544b625b44dbd84cab1567e1cb6973a935b (HEAD -> master, origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Sat May 11 10:15:08 2024 +0800
 
-    LiveTV: ATV displayName changed and restored unexpectly [2/2]
+    LiveTV: fix binder leaked [1/1]
 
-    PD#SWPL-167837
-
-    Problem:
-    logic mismatch
-
-    Solution:
-    remove tune displayName
-
-    Verify:
-    T5D
-
-    Change-Id: I418a8443243f9a10ba43d92db207e559580a5f23
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
-
-commit 10ddec95ab80725cf400a2e08dba06c57888fd73
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Wed Apr 3 11:00:29 2024 +0800
-
-    LiveTV: change source and search finish, play slow [2/2]
-
-    PD#SWPL-164085
+    PD#SWPL-162480
 
     Problem:
-    other source db is too much
+    binder leaked
 
     Solution:
-    after search, only update current source channel list
+    fix binder leaked
 
     Verify:
-    T5D
+    TXHD
 
-    Change-Id: If3c74d4295af849a7237e2553f341b7630ebf640
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
+    Change-Id: Idce7fbb942934555ee71d2dee0a62640fb3a875b
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
 
-commit e4594517b4cd9be6cfb3ee33c7ac6e3385e7b11e (origin/master, origin/HEAD)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Tue Apr 9 18:59:39 2024 +0800
+commit 5f238dede93fdcfb518c976327488497d390be19
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Sat May 11 10:11:30 2024 +0800
 
+    LiveTV: binder leaked [1/1]
+
+    PD#SWPL-162480
+
+    Problem:
+    binder leaked
+
+    Solution:
+    fix binder leaked
+
+    Verify:
+    T3X
+
+    Change-Id: Ie5e0fa054af65a98dc18a2f816499c6024fbca02
+    Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
