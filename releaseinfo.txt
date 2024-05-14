@@ -1,4 +1,4 @@
-commit 9475a66b10f532fe3bb468c664179d713fc30822 (HEAD -> master)
+commit e885ed8b2a0be5d1690eb19607dcf325fd60465e (origin/master, origin/HEAD)
 Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
 Date:   Sat May 11 09:56:44 2024 +0800
 
@@ -18,23 +18,22 @@ Date:   Sat May 11 09:56:44 2024 +0800
     Change-Id: I2a915625f0463a1fb3229ba8998d40e9c21ecd1a
     Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
 
-commit 0cb8d544b625b44dbd84cab1567e1cb6973a935b (origin/master, origin/HEAD)
+commit 43932236b2d025bd80f09088d908375b6b044dd5
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Sat May 11 10:15:08 2024 +0800
+Date:   Wed May 22 16:40:52 2024 +0800
 
-    LiveTV: fix binder leaked [1/1]
+    LiveTV: DUT can edit channel（delete ，rename）[1/1]
 
-    PD#SWPL-162480
+    PD#SWPL-166947
 
     Problem:
-    binder leaked
+    DUT can edit channel（delete ，rename）
 
     Solution:
-    fix binder leaked
+    DUT can edit channel（delete ，rename）
 
     Verify:
-    TXHD
+    T5D
 
-    Change-Id: Idce7fbb942934555ee71d2dee0a62640fb3a875b
+    Change-Id: Icf00d8c012d50712a48abb336cb7d6770fbcb865
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
-
