@@ -1,39 +1,20 @@
-commit e885ed8b2a0be5d1690eb19607dcf325fd60465e (origin/master, origin/HEAD)
-Author: S_F_Qiang <shaofeng.qiang@amlogic.com>
-Date:   Sat May 11 09:56:44 2024 +0800
+commit 5c794a4e77ef9e0d1988a3d3a7d52c99d2da3e55 (HEAD -> master)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Thu May 23 16:08:02 2024 +0800
 
-    LiveTV: atv unblock, info bar lacks info [1/1]
+    LiveTV: fix Error caused by ATSC parameter [1/1]
 
-    PD#SWPL-168631
+    PD#SWPL-170713
 
     Problem:
-    lock information not sync
+    After the ATSC program search is completed, although it prompts that the
+    program has been searched, the TV keeps showing No Channel
 
     Solution:
-    after unlock, sync info to channel banner
+    fix Error caused by ATSC parameter
 
     Verify:
     T5W
 
-    Change-Id: I2a915625f0463a1fb3229ba8998d40e9c21ecd1a
-    Signed-off-by: S_F_Qiang <shaofeng.qiang@amlogic.com>
-
-commit 43932236b2d025bd80f09088d908375b6b044dd5
-Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Wed May 22 16:40:52 2024 +0800
-
-    LiveTV: DUT can edit channel（delete ，rename）[1/1]
-
-    PD#SWPL-166947
-
-    Problem:
-    DUT can edit channel（delete ，rename）
-
-    Solution:
-    DUT can edit channel（delete ，rename）
-
-    Verify:
-    T5D
-
-    Change-Id: Icf00d8c012d50712a48abb336cb7d6770fbcb865
+    Change-Id: I542f9d7e2fa1c75abd70e198836a273629a005fc
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
