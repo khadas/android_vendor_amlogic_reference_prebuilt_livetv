@@ -1,20 +1,28 @@
-commit 5c794a4e77ef9e0d1988a3d3a7d52c99d2da3e55 (HEAD -> master)
+commit 0660a725bc863be174255e9e97a55a2f2cb220c4 (HEAD -> master)
+Merge: a8fe2d23 073419b0
 Author: fei.zhang1 <fei.zhang1@amlogic.com>
-Date:   Thu May 23 16:08:02 2024 +0800
+Date:   Fri Sep 27 11:24:06 2024 +0800
 
-    LiveTV: fix Error caused by ATSC parameter [1/1]
+    Merge branch 'master' of ssh://source.amlogic.com:29418/SEI-DVB/LiveTv
 
-    PD#SWPL-170713
+    Change-Id: Ib3e969ce6a4693d312fc6f47dce888af346f0105
+
+commit 073419b08f3e73c6b68d1c71fb4f5470a22df8c1 (origin/master, origin/HEAD)
+Author: fei.zhang1 <fei.zhang1@amlogic.com>
+Date:   Fri Sep 27 11:16:54 2024 +0800
+
+    LiveTV: Processing wakelock lock released during recording [1/1]
+
+    PD#SWPL-185316
 
     Problem:
-    After the ATSC program search is completed, although it prompts that the
-    program has been searched, the TV keeps showing No Channel
+    The data recorded after the standby state is reproduced as 0
 
     Solution:
-    fix Error caused by ATSC parameter
+    Handle the wakelock lock released during recording and causing standby
 
     Verify:
-    T5W
+    T5M
 
-    Change-Id: I542f9d7e2fa1c75abd70e198836a273629a005fc
+    Change-Id: Ic7d08ae6bfb42172d4564a7b8bdd035745500b05
     Signed-off-by: fei.zhang1 <fei.zhang1@amlogic.com>
